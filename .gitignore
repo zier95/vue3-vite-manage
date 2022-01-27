@@ -4,5 +4,5 @@ dist
 dist-ssr
 .env.dev
 .env.test
-.env.test
+.env.prod
 *.local
