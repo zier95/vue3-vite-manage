@@ -1,25 +1,26 @@
 /**
  * 环境配置封装
+ * 获取当前环境变量
  */
 
-const env = import.mate.MODE || 'prod'
+const env = import.meta.env.MODE || 'prod'
 const Envconfig = {
-  dev: {
+  development: {
     baseApi: '/',
-    mocApi: ''
+    mockApi: 'http://yapi.situdata.com/mock/733'
   },
   test: {
     baseApi: '/',
-    mocApi: ''
+    mockApi: 'http://yapi.situdata.com/mock/733'
   },
   prod: {
     baseApi: '/',
-    mocApi: ''
+    mockApi: 'http://yapi.situdata.com/mock/733'
   },
 }
 
 export default {
   env,
   mock: true,
-  ...Envconfig[env]//将对应的环境变量解构出来
+  ...Envconfig[env]//将对应的环境变量解构出来(包括：baseApi，mockApi)
 }

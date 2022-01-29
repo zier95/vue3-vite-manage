@@ -3,6 +3,9 @@ import Home from '../components/Home.vue'
 import Login from '../components/Login.vue'
 import Welcome from '../components/Welcome.vue'
 
+/**
+ * 定义路由规则
+ */
 const routes = [
   {
     name: 'home',
