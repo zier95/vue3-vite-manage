@@ -2,10 +2,6 @@
 export default {
   name: 'app',
   mounted () {
-    this.$storage.setItem('user', 'aaa1234')
-    // this.$storage.clearItem('user')
-    const data = this.$storage.getItem('user')
-    console.log(data)
   }
 }
 </script>
@@ -15,5 +11,7 @@ export default {
   <router-view></router-view>
 </template>
 
-<style>
+<style lang='scss'>
+@import './assets/style/reset.scss';
+@import './assets/style/index.scss';
 </style>
