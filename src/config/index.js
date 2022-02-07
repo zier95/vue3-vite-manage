@@ -22,5 +22,6 @@ const Envconfig = {
 export default {
   env,
   mock: true,
+  namespace: 'manager',//设定一个可配置的命名空间，可以本地存储时新增属性到此
   ...Envconfig[env]//将对应的环境变量解构出来(包括：baseApi，mockApi)
 }
